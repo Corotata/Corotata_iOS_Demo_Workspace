@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JGu-Mz-Eea">
+                                <rect key="frame" x="87" y="20" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="7M3-pu-v9O"/>
+                                    <constraint firstAttribute="height" constant="200" id="bWg-yX-4hT"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fzx-wI-wKX">
+                                <rect key="frame" x="67" y="228" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="S6s-OW-080"/>
+                                    <constraint firstAttribute="width" constant="240" id="s4s-PA-DAj"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGl-me-Uxc">
+                                <rect key="frame" x="133.5" y="502" width="108" height="30"/>
+                                <state key="normal" title="下载并合并图片"/>
+                                <connections>
+                                    <action selector="downloadThenMergePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="23B-a8-TxL"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eS4-Cc-kFX">
+                                <rect key="frame" x="67" y="364" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="d3D-hG-CbM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eS4-Cc-kFX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="4ef-U4-4ii"/>
+                            <constraint firstItem="eS4-Cc-kFX" firstAttribute="centerX" secondItem="XGl-me-Uxc" secondAttribute="centerX" id="9cR-aj-0in"/>
+                            <constraint firstItem="JGu-Mz-Eea" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FOC-Ch-TdM"/>
+                            <constraint firstItem="JGu-Mz-Eea" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QfF-uv-1fy"/>
+                            <constraint firstItem="XGl-me-Uxc" firstAttribute="top" secondItem="eS4-Cc-kFX" secondAttribute="bottom" constant="10" id="RqU-sU-dl1"/>
+                            <constraint firstItem="fzx-wI-wKX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="THU-Vb-xSj"/>
+                            <constraint firstItem="XGl-me-Uxc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W2W-ee-5gk"/>
+                            <constraint firstItem="eS4-Cc-kFX" firstAttribute="top" secondItem="fzx-wI-wKX" secondAttribute="bottom" constant="8" id="h9x-Re-BIx"/>
+                            <constraint firstItem="fzx-wI-wKX" firstAttribute="top" secondItem="JGu-Mz-Eea" secondAttribute="bottom" constant="8" id="kTE-2u-r9L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mergePhotoImageView" destination="eS4-Cc-kFX" id="mgI-56-sSI"/>
+                        <outlet property="photo2ImageView" destination="fzx-wI-wKX" id="Y28-rr-tqN"/>
+                        <outlet property="photoImageView" destination="JGu-Mz-Eea" id="kr2-La-F7U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
