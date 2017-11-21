@@ -15,6 +15,7 @@
 		75BF7A611FC4294E005CEABB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BF7A601FC4294E005CEABB /* main.m */; };
 		75BF7A6B1FC4294F005CEABB /* _0002_NSOperationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BF7A6A1FC4294F005CEABB /* _0002_NSOperationTests.m */; };
 		75BF7A761FC4294F005CEABB /* _0002_NSOperationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BF7A751FC4294F005CEABB /* _0002_NSOperationUITests.m */; };
+		75BF7A851FC43556005CEABB /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BF7A841FC43556005CEABB /* DownloadViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		75BF7A711FC4294F005CEABB /* 00002-NSOperationQueueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "00002-NSOperationQueueUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75BF7A751FC4294F005CEABB /* _0002_NSOperationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _0002_NSOperationUITests.m; sourceTree = "<group>"; };
 		75BF7A771FC42950005CEABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75BF7A831FC43556005CEABB /* DownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
+		75BF7A841FC43556005CEABB /* DownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				75BF7A5C1FC4294E005CEABB /* LaunchScreen.storyboard */,
 				75BF7A5F1FC4294E005CEABB /* Info.plist */,
 				75BF7A601FC4294E005CEABB /* main.m */,
+				75BF7A831FC43556005CEABB /* DownloadViewController.h */,
+				75BF7A841FC43556005CEABB /* DownloadViewController.m */,
 			);
 			path = "00002-NSOperation";
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 			files = (
 				75BF7A561FC4294E005CEABB /* ViewController.m in Sources */,
 				75BF7A611FC4294E005CEABB /* main.m in Sources */,
+				75BF7A851FC43556005CEABB /* DownloadViewController.m in Sources */,
 				75BF7A531FC4294E005CEABB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

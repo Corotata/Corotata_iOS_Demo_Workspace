@@ -67,4 +67,10 @@
     return _queue;
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    
+    
+    
+}
+
 @end
